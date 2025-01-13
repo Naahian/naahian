@@ -1,0 +1,92 @@
+body {
+    position: relative;
+    background-color: #1b1c1f;
+}
+
+
+.cursor-effect {
+    width: 14rem;
+    height: 14rem;
+    z-index: 10;
+    pointer-events: none;
+    opacity: 0;
+    box-shadow: #fff8cf2f 0 0 25px;
+    border-radius: 50%;
+    position: absolute;
+    left: 500;
+    transition-duration: 1s ease;
+    backdrop-filter: brightness(1.7);
+}
+
+.mobile-hidden {
+    display: block;
+    /* Display by default */
+}
+
+/* Use media query to hide on small screens */
+@media (max-width: 768px) {
+    .mobile-hidden {
+        display: none;
+        /* Hide div on mobile */
+    }
+}
+
+/* Optionally, show div on larger screens */
+@media (min-width: 769px) {
+    .mobile-hidden {
+        display: block;
+        /* Show div on larger screens */
+    }
+}
+
+.body-image {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .3;
+    filter: saturate(1.5);
+    z-index: -10;
+    background-image: url('./images/bg.jpg');
+    background-repeat: repeat;
+    background-position: 50% 0;
+    /* background-size: cover; */
+}
+
+.card {
+    transition-duration: 0.2s;
+    border: groove 1px #7d6eab88;
+}
+
+p {
+    color: #afafaf;
+}
+
+.card:hover {
+    transform: scale(1.01) translateY(-1.1%);
+    box-shadow: #00000088 2px 8px 15px;
+}
+
+.glassed {
+    background-image: linear-gradient(#dddddd0a, #9081bd15);
+    backdrop-filter: blur(15px);
+    border: groove 1px #4a4a4a;
+}
+
+.jumbo {
+    transition-duration: 0.2s;
+}
+
+.jumbo:hover {
+    background-color: #eeeeee0a;
+}
+
+.icon {
+    transition-duration: .1s;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
