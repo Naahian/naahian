@@ -46,10 +46,10 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
-    opacity: .3;
-    filter: saturate(1.5);
+    opacity: .90;
+    filter: brightness(0.75) contrast(1.12);
     z-index: -10;
-    background-image: url('./images/bg.jpg');
+    background-image: url('./images/bg2.png');
     background-repeat: repeat;
     background-position: 50% 0;
     /* background-size: cover; */
@@ -70,8 +70,8 @@ p {
 }
 
 .glassed {
-    background-image: linear-gradient(#dddddd0a, #9081bd15);
-    backdrop-filter: blur(15px);
+    background-image: linear-gradient(#7f7f7f10, #704a7620);
+    backdrop-filter: blur(18px);
     border: groove 1px #4a4a4a;
 }
 
@@ -79,7 +79,7 @@ p {
     transition-duration: 0.2s;
 }
 
-.jumbo:hover {
+.jumbo.glassed:hover {
     background-color: #eeeeee0a;
 }
 
@@ -89,4 +89,9 @@ p {
 
 .icon:hover {
     transform: scale(1.1);
+}
+
+.dark-bg {
+    color: white;
+    background: linear-gradient(150deg, #101328, #0c0d1b);
 }

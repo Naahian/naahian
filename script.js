@@ -1,27 +1,37 @@
-const icons = [
-    "https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54",
-    "https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E",
-    "https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white",
-    "https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white",
-    "https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white",
-    "https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white",
-    "https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white",
-    "https://img.shields.io/badge/firebase-a08021?style=for-the-badge&logo=firebase&logoColor=ffcd34",
-    "https://img.shields.io/badge/-Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white",
-    "https://img.shields.io/badge/espressif-E7352C.svg?style=for-the-badge&logo=espressif&logoColor=white",
-];
-iconContaner = document.getElementById('tech_icons');
-cursor = document.querySelector('.cursor-effect');
-torch = document.getElementById('torch')
-light = document.querySelector('.cursor-effect')
-torchOn = false
+let cursor = document.querySelector('.cursor-effect');
+let torch = document.getElementById('torch')
+let light = document.querySelector('.cursor-effect')
+let headline = document.getElementById("headline")
+let about = document.getElementById("about")
+let skills = document.getElementById("skills")
+// let socials = document.getElementById("socials")
 
-icons.forEach(icon => {
-    iconContaner.innerHTML += `<img src="${icon}" class="p-1 icon">`;
+// fetch contents
+fetch("http://127.0.0.1:5000/get").then(async (value) => {
+    content = await value.json();
+    headline.innerText = content["headline"];
+    about.innerText = content["about"];
+    content["skills"].forEach(link => {
+        skills.appendChild(buildImgBadge(link))
+    })
+    content[""].forEach()
+
 })
 
-torch.addEventListener("mousedown", () => {
 
+function buildImgBadge(url) {
+    img = document.createElement('img')
+    img.src = `${url}`
+    img.className = "icon m-1"
+    return img
+}
+
+
+
+// useless torch
+let torchOn = false
+
+torch.addEventListener("mousedown", () => {
     torchOn = !torchOn
     torchMove()
     if (torchOn) {
@@ -48,4 +58,6 @@ function torchMove() {
             cursor.style.top = `${e.pageY - cursor.offsetHeight / 2}px`;
     })
 }
+
+
 

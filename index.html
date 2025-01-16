@@ -28,8 +28,8 @@
           <li><a href="#contact" class="nav-link px-2 link-secondary">Contact</a></li>
         </ul>
 
-        <div class="mobile-hidden bg-dark ps-3 py-1 rounded-3">
-          <label class="fs-6">Too dark here 😑? Use this Torch 👉</label>
+        <div class="mobile-hidden dark-bg ps-3 py-1 rounded-3">
+          <label class="fs-6">Too dark here? Use this Torch 👉</label>
           <button class="btn btn-primary mx-1 " id="torch">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
               class="bi bi-brightness-high" viewBox="0 0 16 18">
@@ -46,10 +46,9 @@
     <div class="py-4 container">
       <div class="row glassed px-2 px-md-5 mb-4 rounded-3 align-items-center mx-1" style="border: groove 1px #444;">
         <div class="col-12 col-md-6 py-2 py-md-5  text-center text-md-start">
-          <h1 class="display-5 fw-bold text-secondary text-center text-md-start my-3 my-md-0">Hi👋 I'm Nahian</h1>
-          <p class="fs-4 text-light">
-            An undergraduate CS major who is a passionate coder and a robotics enthusiast, Creating tech solutions for
-            a better and sustainable future.
+          <h1 class="display-5 fw-bold text-light text-center text-md-start my-3 my-md-0">Hi👋 I'm Nahian</h1>
+          <p class="fs-4" id="headline" style="color: #bbb;">
+            <!-- fetch from api -->
           </p>
           <ul class="justify-content-center justify-content-md-start list-unstyled d-flex">
 
@@ -79,20 +78,20 @@
       </div>
 
       <!-- Skills Section -->
-      <div class="row" id="skills">
+      <div class="row">
         <div class="col-12 col-md-6 mb-3">
           <div class="glassed h-100 p-5 text-white rounded-3 jumbo">
             <h2 class="text-light mb-3">Technologies I know</h2>
-            <span id="tech_icons"></span>
+            <div id="skills">
+              <!-- fetch from api -->
+            </div>
           </div>
         </div>
         <div class="col-12 col-md-6 mb-3">
-          <div class="h-100 p-5 text-bg-dark rounded-3 jumbo">
-            <h2 id="#skills" class="text-light">About Me</h2>
-            <p style="font-size: large;">
-              As a passionate coder, my areas of expertise include full-stack app development in Flutter, backend
-              creation with Django and Firebase, and simple web frontends using Bootstrap and vanilla JS. I also work
-              with IoT projects involving Arduino and ESP.
+          <div class="h-100 p-5  dark-bg rounded-3 jumbo">
+            <h2 class="text-light">About Me</h2>
+            <p style="font-size: large;" id="about">
+              <!-- fetch from api -->
             </p>
           </div>
         </div>
@@ -105,33 +104,33 @@
       <div class="d-flex flex-wrap justify-content-center gap-3 container">
         <!-- Project Card -->
         <a href="https://github.com/Naahian?tab=repositories" class="text-decoration-none">
-          <div class="card text-bg-dark" style="width: 100%; max-width: 420px; height: 460px; overflow: hidden;">
+          <div class="card dark-bg" style="width: 100%; max-width: 420px; height: 460px; overflow: hidden;">
             <img class="card-img-top object-fit-cover" style="height: 60%;" src="./images/lfr.jpg"
               alt="Line Follower Robot">
             <div class="card-body" style="box-shadow: #111 0 -15px 100px;">
               <h4 class="card-title">Line Follower Robot</h4>
               <p class="card-text" style="text-overflow:ellipsis;">
-                PID controlled basic line follower. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                PID controlled basic line follower.
               </p>
             </div>
           </div>
         </a>
-        <!-- Another Project Card -->
+        <!-- Project Card -->
         <a href="https://github.com/Naahian?tab=repositories" class="text-decoration-none">
-          <div class="card text-bg-dark" style="width: 100%; max-width: 420px; height: 460px; overflow: hidden;">
+          <div class="card dark-bg" style="width: 100%; max-width: 420px; height: 460px; overflow: hidden;">
             <img class="card-img-top object-fit-cover" style="height: 60%;" src="./images/shortestpah.png"
               alt="Shortest Path Visualizer">
             <div class="card-body" style="box-shadow: #111 0 -15px 100px;">
               <h4 class="card-title">Shortest Path Visualizer</h4>
               <p class="card-text">
-                Visualizes shortest paths with different algorithms. Lorem ipsum dolor sit amet.
+                Visualizes shortest paths with different algorithms.
               </p>
             </div>
           </div>
         </a>
-        <!-- Another Project Card -->
+        <!-- Project Card -->
         <a href="https://github.com/Naahian?tab=repositories" class="text-decoration-none">
-          <div class="card text-bg-dark" style="width: 100%; max-width: 420px; height: 460px; overflow: hidden;">
+          <div class="card dark-bg" style="width: 100%; max-width: 420px; height: 460px; overflow: hidden;">
             <img class="card-img-top object-fit-cover" style="height: 60%;" src="./images/pygame.png" alt="Pygame UI">
             <div class="card-body" style="box-shadow: #111 0 -15px 100px;">
               <h4 class="card-title">Pygame UI</h4>
@@ -161,8 +160,7 @@
   </div>
   </div>
 
-
-  <script src="./script.js"></script>
+  <script src="script.js"></script>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
