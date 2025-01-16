@@ -6,8 +6,8 @@ let about = document.getElementById("about")
 let skills = document.getElementById("skills")
 // let socials = document.getElementById("socials")
 
-// fetch contents
-fetch("http://127.0.0.1:5000/get").then(async (value) => {
+//fetch data
+fetch("./data.json").then(async (value) => {
     content = await value.json();
     headline.innerText = content["headline"];
     about.innerText = content["about"];
