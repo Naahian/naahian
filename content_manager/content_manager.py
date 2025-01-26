@@ -4,7 +4,7 @@ from flask_cors import CORS
 
 app = Flask(__name__)
 CORS(app)
-UPLOAD_FOLDER = "./images"
+UPLOAD_FOLDER = "images"
 DATA = {}
 
 def loadData():
@@ -119,7 +119,7 @@ def createProject():
         "title": request.form["title"],
         "description": request.form["description"],
         "link": request.form["link"],
-        "thumbnail": f"/images/{request.files["thumbnail"].filename}"
+        "thumbnail": f"./images/{request.files["thumbnail"].filename}"
         
     }
     return project
