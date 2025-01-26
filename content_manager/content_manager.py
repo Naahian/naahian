@@ -4,7 +4,7 @@ from flask_cors import CORS
 
 app = Flask(__name__)
 CORS(app)
-UPLOAD_FOLDER = "images"
+UPLOAD_FOLDER = "./images"
 DATA = {}
 
 def loadData():
