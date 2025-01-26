@@ -1,1 +1,51 @@
-{"about": "As a passionate coder, my areas of expertise include full-stack app development in Flutter, backend creation with Django and Firebase, and simple web frontends using Bootstrap and vanilla JS. I also work with IoT projects involving Arduino and ESP.", "headline": "An undergraduate CS major who is a passionate coder and a robotics enthusiast, Creating tech solutions for a better and sustainable future.", "projects": [{"description": "PID controlled basic line follower.", "id": "78894084", "link": "https://github.com/Naahian/LFR", "thumbnail": "./images/lfr.jpg", "title": "Line Follower Robot"}, {"description": "Visualizes shortest paths with different algorithms.", "id": "7438af23", "link": "https://github.com/Naahian/Shortest-Path-Visualizer", "thumbnail": "./images/shortestpah.png", "title": "Shortest Path Visualizer"}, {"description": "A simple UI built using pygame for game development.", "id": "fdaa2037", "link": "https://github.com/Naahian/pygame_ui", "thumbnail": "./images/pygame.png", "title": "Pygame UI"}], "skills": ["https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white", "https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54", "https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E", "https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white", "https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white", "https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white", "https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white", "https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white", "https://img.shields.io/badge/firebase-a08021?style=for-the-badge&logo=firebase&logoColor=ffcd34", "https://img.shields.io/badge/-Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white", "https://img.shields.io/badge/espressif-E7352C.svg?style=for-the-badge&logo=espressif&logoColor=white", "https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white"], "socials": [["https://github.com/Naahian", "./images/github.png"], ["https://www.linkedin.com/in/abdullah-al-nahian-3286841b1/", "./images/linkedIn.png"]]}
+{
+    "about": "As a passionate coder, my areas of expertise include full-stack app development in Flutter, backend creation with Django and Firebase, and simple web frontends using Bootstrap and vanilla JS. I also work with IoT projects involving Arduino and ESP.",
+    "headline": "An undergraduate CS major who is a passionate coder and a robotics enthusiast, Creating tech solutions for a better and sustainable future.",
+    "projects": [
+        {
+            "description": "PID controlled basic line follower.",
+            "id": "78894084",
+            "link": "https://github.com/Naahian/LFR",
+            "thumbnail": "./images/lfr.jpg",
+            "title": "Line Follower Robot"
+        },
+        {
+            "description": "Visualizes shortest paths with different algorithms.",
+            "id": "7438af23",
+            "link": "https://github.com/Naahian/Shortest-Path-Visualizer",
+            "thumbnail": "./images/shortestpah.png",
+            "title": "Shortest Path Visualizer"
+        },
+        {
+            "description": "A simple UI built using pygame for game development.",
+            "id": "fdaa2037",
+            "link": "https://github.com/Naahian/pygame_ui",
+            "thumbnail": "./images/pygame.png",
+            "title": "Pygame UI"
+        }
+    ],
+    "skills": [
+        "https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white",
+        "https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54",
+        "https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E",
+        "https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white",
+        "https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white",
+        "https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white",
+        "https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white",
+        "https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white",
+        "https://img.shields.io/badge/firebase-a08021?style=for-the-badge&logo=firebase&logoColor=ffcd34",
+        "https://img.shields.io/badge/-Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white",
+        "https://img.shields.io/badge/espressif-E7352C.svg?style=for-the-badge&logo=espressif&logoColor=white",
+        "https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white"
+    ],
+    "socials": [
+        [
+            "https://github.com/Naahian",
+            "./images/github.png"
+        ],
+        [
+            "https://www.linkedin.com/in/abdullah-al-nahian-3286841b1/",
+            "./images/linkedIn.png"
+        ]
+    ]
+}

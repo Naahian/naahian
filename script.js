@@ -50,7 +50,7 @@ function buildProjectCard(project) {
     card.className = "card dark-bg";
     card.style = "width: 100%; max-width: 420px; height: 460px; overflow: hidden;";
     let content = `
-            <img class="card-img-top object-fit-cover" style="height: 60%;" src=".${project["thumbnail"]}"
+            <img class="card-img-top object-fit-cover" style="height: 60%;" src="${project["thumbnail"]}"
               alt="Line Follower Robot">
             <div class="card-body" style="box-shadow: #111 0 -15px 100px;">
               <a href="${project["link"]}" target="_blank">
