@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="Cache-Control" content="no-cache">
+
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <!-- links -->
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
+
+    <style>
+        .list-tile {
+            cursor: grab;
+        }
+
+        .list-tile:active {
+            cursor: grabbing;
+        }
+    </style>
+</head>
+
+<body style="position: absolute; height: 100%; width: 100%;">
+    <div id="status" class="text-center z-3 position-fixed w-100  bottom-0"></div>
+    <div class="d-flex h-100">
+        <!-- Nav tabs -->
+        <div class=" bg-dark h-100" style="position: fixed; width: 17%;">
+            <ul class="nav nav-pills flex-column p-4" id="myTab" role="tablist">
+                <a class="my-4 link-light link-underline-opacity-25 link-underline-opacity-100-hover" href="/index.html"
+                    target="_blank">
+                    <h5 class="text-center">View Portfolio</h5>
+                </a>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="profile-tab" data-bs-toggle="tab" data-bs-target="#contents"
+                        type="button" role="tab" aria-selected="true">
+                        Contents
+                    </a>
+                </li>
+                <li class="nav-item" srole="presentation">
+                    <a class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#projects" type="button"
+                        role="tab" aria-controls="home" aria-selected="false">
+                        Projects
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+        <!-- dummy col for spacing, for sidebar -->
+        <div class="col-2"></div>
+        <!-- Tab panes -->
+        <div class="col  tab-content">
+            <!-- Edit Content Form -->
+            <div class="tab-pane show active" id="contents" role="tabpanel" aria-labelledby="contents-tab">
+                <div style="padding: 3rem 5rem;">
+                    <form id="content_form" method="post" class="p-4 bg-light border rounded-2">
+                        <h4 class="text-center mb-4">Edit Page Contents</h4>
+                        <div class="mb-3">
+                            <label for="" class="form-label fw-bold">Headline</label>
+                            <textarea class="form-control" name="headline" id="headline"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label fw-bold">About Me</label>
+                            <textarea class="form-control" name="about" id="about"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label fw-bold">Skills Badges</label>
+                            <div id="skills" class="container">
+                            </div>
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label "><strong>Socials</strong> (link + image)</label>
+                            <div id="socials" class="container">
+                            </div>
+                        </div>
+                        <button class="btn btn-warning px-5">Update</button>
+                    </form>
+                </div>
+            </div>
+            <!-- Edit Projects Form -->
+            <div class="tab-pane" id="projects" role="tabpanel" aria-labelledby="projects-tab">
+                <div class="p-5 m-auto">
+                    <!-- EDIT -->
+                    <form action="" method="post" class="bg-light  border p-3 rounded-2" id="update_project">
+                        <h4 class="text-center mb-4">Update or Delete Project Card</h4>
+                        <div class="row align-items-center">
+                            <!-- select project -->
+                            <div class="col-4 ">
+                                <label for="" class="form-label fw-bold">Project</label>
+                                <select type="" class="form-control" id="projectName" name="project-name"></select>
+                            </div>
+
+                            <div class="col mt-1">
+                                <br>
+                                <button class="btn btn-primary px-4 mx-1" id="updateProject">Move to Front</button>
+                                <button class="btn btn-danger px-5" id="deleteProject"> Delete
+                                </button>
+                            </div>
+                        </div>
+
+                    </form>
+                    <br>
+
+                    <!-- ADD -->
+                    <form accept="" method="post" enctype="multipart/form-data" id="add_project"
+                        class="border p-3 rounded-2 bg-light">
+                        <h4 class="text-center mb-4">Add New Project Card</h4>
+                        <div class="mb-3">
+                            <label for="" class="form-label fw-bold">Title</label>
+                            <input type="text" class="form-control" name="title">
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label fw-bold">Description</label>
+                            <input type="text" class="form-control" name="description">
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label fw-bold">Link</label>
+                            <input type="url" class="form-control" name="link" placeholder="url">
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label fw-bold">Thumbnail</label>
+                            <input type="file" class="form-control" name="thumbnail" id="">
+                        </div>
+                        <button class="btn btn-success px-5">Add Project</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="list_item.js" type="module"></script>
+    <script src="content_manager.js" type="module"></script>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+
+
+
+<!-- 
+
+"https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white",
+"https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54",
+"https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E",
+"https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white",
+"https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white",
+"https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white",
+"https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white",
+"https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white",
+"https://img.shields.io/badge/firebase-a08021?style=for-the-badge&logo=firebase&logoColor=ffcd34",
+"https://img.shields.io/badge/-Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white",
+"https://img.shields.io/badge/espressif-E7352C.svg?style=for-the-badge&logo=espressif&logoColor=white"
+
+
+
+-->
