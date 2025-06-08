@@ -1,0 +1,80 @@
+        .code-container {
+            background-color: var(--bg-secondary);
+            border-radius: 10px;
+            padding: 2rem;
+            width: 80%;
+            max-width: 700px;
+            border: solid 1pt var(--accent-color);
+            box-shadow: 0 20px 60px rgba(99, 102, 241, 0.2);
+        }
+
+        .code-header {
+            display: flex;
+            margin-bottom: 1rem;
+        }
+
+        .code-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+
+        .dot-red {
+            background-color: #ff5f56;
+        }
+
+        .dot-yellow {
+            background-color: #ffbd2e;
+        }
+
+        .dot-green {
+            background-color: #27c93f;
+        }
+
+        .code-output {
+            font-family: "consolas";
+            margin: 0;
+            color: #f8fafc;
+            font-size: 1rem;
+            line-height: 1.6;
+            overflow: hidden;
+            text-align: left;
+            white-space: pre;
+        }
+
+        .comment {
+            color: #64748b;
+        }
+
+        .keyword {
+            color: #c792ea;
+        }
+
+        .class {
+            color: #82aaff;
+        }
+
+        .function {
+            color: #ffcb6b;
+        }
+
+        .string {
+            color: #c3e88d;
+        }
+
+        .number {
+            color: #f78c6c;
+        }
+
+        .operator {
+            color: #89ddff;
+        }
+
+        .punctuation {
+            color: #eeffff;
+        }
+
+        .self {
+            color: #f07178;
+        }
