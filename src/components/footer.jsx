@@ -5,27 +5,26 @@ class PortfolioFooter extends Component {
         return (
             <footer className="text-white pt-5" style={{ background: "var(--bg-secondary)" }}>
                 <div id='contact'>
-                    <div className="container row">
+                    <div className="container row justify-content-center">
                         {/* Contact Information */}
-                        <div className="col-md-4 mb-4">
+                        <div className="col-md-7 mb-4 text-start">
                             <h5 className="text-uppercase border-bottom border-primary pb-2 d-inline-block">
                                 Contact Me
                             </h5>
-                            <ul className="list-unstyled mt-3">
+                            <ul className="list-unstyled mt-3 ">
                                 <li className="mb-2">
                                     <i className="bi bi-envelope me-2 text-primary"></i>
-                                    hello@example.com
+                                    nahiandev@gmail.com
                                 </li>
                                 <li className="mb-2">
                                     <i className="bi bi-geo-alt me-2 text-primary"></i>
-                                    San Francisco, CA
+                                    Dhaka, Bangladesh
                                 </li>
                             </ul>
                         </div>
 
-                        <div className='col-md-4' ></div>
-                        {/* Social Media */}
-                        <div className="col-md-4 mb-4 ">
+
+                        <div className="col-md-3 mb-4 text-start">
                             <h5 className="text-uppercase border-bottom border-primary pb-2 d-inline-block">
                                 Follow Me
                             </h5>
@@ -42,20 +41,10 @@ class PortfolioFooter extends Component {
                     </div>
 
                     {/* Copyright */}
-                    <div className="row py-3 px-5 border-top border-secondary" >
-                        <div className="col-md-6 text-center text-md-start">
-                            <p className="mb-0">
-                                &copy; {new Date().getFullYear()} My Portfolio. All rights reserved.
-                            </p>
-                        </div>
-                        <div className="col-md-6 text-center text-md-end">
-                            <a href="#privacy" className="text-white text-decoration-none me-3">
-                                Privacy Policy
-                            </a>
-                            <a href="#terms" className="text-white text-decoration-none">
-                                Terms of Service
-                            </a>
-                        </div>
+                    <div className="py-3 px-5 border-top border-secondary justify-content-center" >
+                        <p className="mb-0">
+                            &copy; {new Date().getFullYear()} <b>My Portfolio</b> made by <b>Abduall Al Nahian</b>. All rights reserved.
+                        </p>
                     </div>
                 </div>
             </footer >
