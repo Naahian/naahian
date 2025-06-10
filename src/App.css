@@ -41,7 +41,7 @@
 
 /* In your CSS file */
 .hero-section {
-  min-height: calc(85vh);
+  min-height: calc(90vh);
   backdrop-filter: blur(20px);
 }
 
@@ -68,7 +68,7 @@
   /* Secondary Colors */
   --secondary-color: #9333ea;
   /* Lighter purple */
-  --accent-color: #00d0ff7a;
+  --accent-color: #00d0ffe7;
   /* Cyber blue accent */
   --code-accent: #f97316;
   /* Terminal green */
@@ -76,7 +76,7 @@
   /* Dark Mode Backgrounds */
   --bg-primary: #0f172a;
   /* Dark navy base */
-  --bg-secondary: #1e293b;
+  --bg-secondary: #19263b;
   /* Slightly lighter navy */
   --bg-tertiary: #334155;
   /* For cards/containers */
@@ -91,7 +91,7 @@
 
   /* UI Elements */
   --border-color: #212e42;
-  --shadow-color: rgba(15, 23, 42, 0.5);
+  --shadow-color: rgba(10, 13, 21, 0.5);
 
   /* Special Effects */
   --neon-glow: 0 0 10px rgba(124, 58, 237, 0.7);
