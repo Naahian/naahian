@@ -23,5 +23,5 @@ Hi there 👋 I am Nahian, a computer science undergraduate student, a passionat
 ![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white)
 ![Espressif](https://img.shields.io/badge/espressif-E7352C.svg?style=for-the-badge&logo=espressif&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-`RTOS`
+[rtos](https://flat.badgen.net/#badge/Linux/RTOS/)
 
