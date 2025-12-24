@@ -1,6 +1,6 @@
 ## About Me
 Hi there 👋 I am Nahian, a computer science undergraduate student, a passionate coder and a robotics enthusiast.<br/>
-👉 https://myportfolio-nahiandev-gmailcoms-projects.vercel.app/
+👉 https://naahian.vercel.app/
 ## Technologies I Know⚡
 ### Languages:
 ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
