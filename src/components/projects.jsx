@@ -1,34 +1,46 @@
 import React, { Component } from 'react';
+import pathFinder from "../assets/path_finder.png"
+import leafify from "../assets/leafify.png"
+import lfr from "../assets/lfr.jpg"
+import hydro from "../assets/hydro.png"
 
 class Projects extends Component {
     projects = [
         {
             title: "BuildBuddy",
-            image: <i className="fas fa-robot"></i>, // or "/images/buildbuddy.png"
+            image: <i className="fas fa-robot"></i>,
             description: "AI-assisted eCommerce platform specifically designed for makers and DIY enthusiasts, featuring personalized recommendations and project planning tools.",
             link: "https://github.com/Naahian/buildbuddy_frontend",
             tags: ["Web", "React", "Flask.js"]
         },
         {
             title: "Hydroponic Automation",
-            image: <i className="fas fa-leaf"></i>, // or "/images/hydroponic.png"
+            image: <img src={hydro} alt="ui" />,
             description: "IoT-based automated hydroponic system with real-time monitoring and control of nutrients, pH levels, and lighting conditions.",
             link: "https://github.com/Naahian/hydro_project",
             tags: ["IoT", "Arduino", "Automation"]
         },
         {
             title: "Path Visualizer",
-            image: <i className="fas fa-project-diagram"></i>, // or "/images/path-visualizer.png"
+            image: <img src={pathFinder} alt="ui" />,
             description: "Interactive visualization tool for shortest path algorithms (Dijkstra's, A*) with customizable grids and real-time animation.",
             link: "https://github.com/Naahian/Shortest-Path-Visualizer",
             tags: ["Algorithms", "Pygame", "Python"]
         },
         {
             title: "LFR PID Controller",
-            image: <i className="fas fa-car-side"></i>, // or "/images/lfr.png"
+            image: <img src={lfr} alt="ui" />
+            ,
             description: "Line Following Robot with PID-controlled motors for precise movement and adaptive speed control using infrared sensors.",
             link: "https://github.com/Naahian/LFR",
             tags: ["Embedded Systems", "Control Systems", "Robotics"]
+        },
+        {
+            title: "Leafify",
+            image: <img src={leafify} alt="app banner" />,
+            description: "All in one AI powered plant companion app with plant guides, shop, garden plant info collection, detection and many more",
+            link: "https://github.com/Naahian/Leafify",
+            tags: ["Flutter", "Riverpod", "Firebase", "FastAPI"]
         }
     ];
 
