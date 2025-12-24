@@ -7,6 +7,28 @@ import hydro from "../assets/hydro.png"
 class Projects extends Component {
     projects = [
         {
+            title: "Reborn",
+            image: <img src="https://img.itch.zone/aW1nLzI0NTk3ODc1LnBuZw==/original/cvDa9n.png" alt="game logo" />,
+            description: "A Hobby Project. 2D RPG platformer game created using godot game engine. A king was revived, now he has to reclaim his kingdom.",
+            link: "https://naahian.itch.io/reborn",
+            tags: ["Godot", "Game Dev", "RPG", "Platformer"]
+        },
+
+        {
+            title: "Leafify",
+            image: <img src={leafify} alt="app banner" />,
+            description: "All in one AI powered plant companion app with plant guides, shop, garden plant info collection, detection and many more",
+            link: "https://github.com/Naahian/Leafify",
+            tags: ["Flutter", "Riverpod", "Firebase", "FastAPI"]
+        },
+        {
+            title: "Path Visualizer",
+            image: <img src={pathFinder} alt="ui" />,
+            description: "Interactive visualization tool for shortest path algorithms (Dijkstra's, A*) with customizable grids and real-time animation.",
+            link: "https://github.com/Naahian/Shortest-Path-Visualizer",
+            tags: ["Algorithms", "Pygame", "Python"]
+        },
+        {
             title: "BuildBuddy",
             image: <i className="fas fa-robot"></i>,
             description: "AI-assisted eCommerce platform specifically designed for makers and DIY enthusiasts, featuring personalized recommendations and project planning tools.",
@@ -20,13 +42,7 @@ class Projects extends Component {
             link: "https://github.com/Naahian/hydro_project",
             tags: ["IoT", "Arduino", "Automation"]
         },
-        {
-            title: "Path Visualizer",
-            image: <img src={pathFinder} alt="ui" />,
-            description: "Interactive visualization tool for shortest path algorithms (Dijkstra's, A*) with customizable grids and real-time animation.",
-            link: "https://github.com/Naahian/Shortest-Path-Visualizer",
-            tags: ["Algorithms", "Pygame", "Python"]
-        },
+
         {
             title: "LFR PID Controller",
             image: <img src={lfr} alt="ui" />
@@ -35,13 +51,7 @@ class Projects extends Component {
             link: "https://github.com/Naahian/LFR",
             tags: ["Embedded Systems", "Control Systems", "Robotics"]
         },
-        {
-            title: "Leafify",
-            image: <img src={leafify} alt="app banner" />,
-            description: "All in one AI powered plant companion app with plant guides, shop, garden plant info collection, detection and many more",
-            link: "https://github.com/Naahian/Leafify",
-            tags: ["Flutter", "Riverpod", "Firebase", "FastAPI"]
-        }
+
     ];
 
     render() {
