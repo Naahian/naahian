@@ -1,7 +1,42 @@
 import React, { Component } from 'react';
 
+const Info = {
+    "contact": ["nahianbusi@gmail.com", "Dhaka, Bangladesh"],
+    "links": [{
+        "github": "https://github.com/Naahian",
+        "linkedin": "https://www.linkedin.com/in/abdullah-al-nahian-3286841b1"
+
+    }]
+}
+
+
 class PortfolioFooter extends Component {
+
+    createLinksComponent() {
+        return <div className="mt-3 social-icons">
+            {Info.links.flatMap(obj =>
+                Object.entries(obj)
+                    .filter(([_, url]) => url) // skip empty links
+                    .map(([key, url]) => (
+                        <a
+                            key={key}
+                            href={url}
+                            className="text-light me-3"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <i className={`bi bi-${key} fs-4`}></i>
+                        </a>
+                    ))
+            )}
+        </div>;
+
+    }
+
+
     render() {
+
+
         return (
             <footer className="text-white pt-5" style={{ background: "var(--bg-secondary)" }}>
                 <div id='contact'>
@@ -12,13 +47,16 @@ class PortfolioFooter extends Component {
                                 Contact Me
                             </h5>
                             <ul className="list-unstyled mt-3 ">
+
+                                {/* EMAIL */}
                                 <li className="mb-2">
                                     <i className="bi bi-envelope me-2 text-primary"></i>
-                                    nahiandev@gmail.com
+                                    {Info["contact"][0]}
                                 </li>
+                                {/* ADDRESS */}
                                 <li className="mb-2">
                                     <i className="bi bi-geo-alt me-2 text-primary"></i>
-                                    Dhaka, Bangladesh
+                                    {Info["contact"][1]}
                                 </li>
                             </ul>
                         </div>
@@ -28,14 +66,7 @@ class PortfolioFooter extends Component {
                             <h5 className="text-uppercase border-bottom border-primary pb-2 d-inline-block">
                                 Follow Me
                             </h5>
-                            <div className="mt-3 social-icons">
-                                <a href="https://github.com/Naahian" className="text-light me-3" target="_blank" rel="noopener noreferrer">
-                                    <i className="bi bi-github fs-4"></i>
-                                </a>
-                                <a href="www.linkedin.com/in/abdullah-al-nahian-3286841b1" className="text-light me-3" target="_blank" rel="noopener noreferrer">
-                                    <i className="bi bi-linkedin fs-4"></i>
-                                </a>
-                            </div>
+                            {this.createLinksComponent()}
 
                         </div>
                     </div>
