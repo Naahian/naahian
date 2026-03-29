@@ -256,18 +256,19 @@ body {
 }
 
 .skill-icon {
-  font-size: 3rem;
   margin-bottom: 1rem;
-  display: inline-block;
-  background: linear-gradient(135deg,
-      #7c3aed 0%,
-      /* Vibrant purple */
-      #f97316 100%
-      /* Orange accent */
-    );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-icon i {
+  font-size: 3rem;
+  background: linear-gradient(135deg, #7c3aed, #f97316);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 8px rgba(124, 58, 237, 0.5));
 }
 
 .skill-card h4 {
@@ -276,7 +277,9 @@ body {
 }
 
 .skill-badge {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
   background: var(--primary-light);
   color: var(--primary-color);
   padding: 0.25rem 0.75rem;
@@ -284,6 +287,12 @@ body {
   font-size: 0.875rem;
   font-weight: 500;
   margin: 0.25rem;
+}
+
+.badge-icon {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
 }
 
 /* projects */
