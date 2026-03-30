@@ -9,7 +9,7 @@
     position: relative;
     overflow: hidden;
     box-shadow: 0 20px 40px var(--shadow-color);
-    animation: hoverApear .7s ease;
+    animation: hoverApear 1s ease;
 }
 
 .code-container::before {
@@ -24,13 +24,13 @@
             transparent,
             var(--accent-color),
             transparent);
-    animation: borderGlow 4s ease-in-out infinite;
+    animation: borderGlow 2s ease-in-out infinite;
     filter: blur(1px);
 }
 
 @keyframes hoverApear {
     0% {
-        transform: translateY(4rem) rotateZ(3deg) scale(.8);
+        transform: translateY(4rem) rotateZ(8deg) scale(.6);
         opacity: .3;
     }
 

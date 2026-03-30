@@ -216,7 +216,6 @@ body {
 
 
 /* Skill Section */
-
 .skill-card {
   background: var(--bg-primary);
   border: 1px solid var(--border-color);
@@ -280,8 +279,8 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
-  background: var(--primary-light);
-  color: var(--primary-color);
+  background: #55555555;
+  color: #aaa;
   padding: 0.25rem 0.75rem;
   border-radius: 20px;
   font-size: 0.875rem;
@@ -292,7 +291,58 @@ body {
 .badge-icon {
   width: 16px;
   height: 16px;
+  margin: 0.3rem;
   object-fit: contain;
+}
+
+.skill-items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  text-align: left;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.skill-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skill-percentage {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--accent-color);
+  min-width: 36px;
+  text-align: right;
+}
+
+.skill-bar-track {
+  width: 100%;
+  height: 5px;
+  background: var(--border-color);
+  border-radius: 99px;
+  overflow: hidden;
+}
+
+.skill-bar-fill {
+  height: 100%;
+  width: 0%;
+  border-radius: 99px;
+  background: linear-gradient(90deg, #7c3aed, #f97316);
+  animation: fillBar 1.2s ease forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes fillBar {
+  to {
+    width: var(--target-width);
+  }
 }
 
 /* projects */

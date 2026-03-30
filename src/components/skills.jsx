@@ -5,14 +5,13 @@ class Skills extends Component {
         {
             category: "Frontend Development",
             icon: "fa-solid fa-layer-group",
-
             description: "Creating cross-platform mobile applications with modern frameworks",
             items: [
-                { name: "Flutter", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" },
-                { name: "Riverpod", icon: "https://riverpod.dev/img/logo.svg" },
-                { name: "GetX", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" },
-                { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
-                { name: "Bootstrap5", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" },
+                { name: "Flutter", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg", percentage: 90 },
+                { name: "Riverpod", icon: "https://riverpod.dev/img/logo.svg", percentage: 80 },
+                { name: "GetX", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg", percentage: 75 },
+                { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg", percentage: 38 },
+                { name: "Bootstrap5", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg", percentage: 35 },
             ],
         },
         {
@@ -20,14 +19,14 @@ class Skills extends Component {
             icon: "fa-solid fa-server",
             description: "Building scalable server-side applications and APIs",
             items: [
-                { name: "Flask", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" },
-                { name: "FastAPI", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" },
-                { name: "MySQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
-                { name: "SQLite", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" },
-                { name: "Firebase", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" },
-                { name: "Postman", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" },
-                { name: "Supabase", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg" },
-                { name: "Docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
+                { name: "Flask", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg", percentage: 40 },
+                { name: "FastAPI", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg", percentage: 80 },
+                { name: "MySQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg", percentage: 70 },
+                { name: "SQLite", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg", percentage: 40 },
+                { name: "Firebase", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg", percentage: 65 },
+                { name: "Postman", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg", percentage: 70 },
+                { name: "Supabase", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg", percentage: 65 },
+                { name: "Docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg", percentage: 25 },
             ],
         },
         {
@@ -35,15 +34,14 @@ class Skills extends Component {
             icon: "fa-solid fa-microchip",
             description: "Developing intelligent systems and embedded solutions",
             items: [
-                { name: "Arduino", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" },
-                { name: "ESP32", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/espressif.svg" },
-                { name: "Raspberry Pi", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/raspberrypi/raspberrypi-original.svg" },
-                { name: "Control System", icon: "https://img.icons8.com/?size=100&id=15163&format=png&color=000000" },
-                { name: "RTOS", icon: "https://img.icons8.com/?size=100&id=tU0pohYbgHJW&format=png&color=000000" },
-                { name: "ROS2", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ros/ros-original.svg" },
+                { name: "Arduino", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg", percentage: 90 },
+                { name: "ESP", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/espressif.svg", percentage: 85 },
+                { name: "Raspberry Pi", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/raspberrypi/raspberrypi-original.svg", percentage: 70 },
+                { name: "Control System", icon: "https://img.icons8.com/?size=100&id=15163&format=png&color=000000", percentage: 60 },
+                { name: "RTOS", icon: "https://img.icons8.com/?size=100&id=tU0pohYbgHJW&format=png&color=000000", percentage: 30 },
+                { name: "ROS2", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ros/ros-original.svg", percentage: 25 },
             ],
         },
-
     ];
 
     other_skills = ["Clean Architecture", "MVC", "Feature First"]
@@ -63,16 +61,27 @@ class Skills extends Component {
                                     </div>
                                     <h4 style={{ color: "var(--text-secondary)" }}>{cat.category}</h4>
                                     <p className="text-secondary mb-3">{cat.description}</p>
-                                    <div>
+                                    <div className="skill-items-list">
                                         {cat.items.map((item) => (
-                                            <span key={item.name} className="skill-badge">
-                                                <img
-                                                    src={item.icon}
-                                                    alt={item.name}
-                                                    className="badge-icon"
-                                                />
-                                                {item.name}
-                                            </span>
+                                            <div key={item.name} className="skill-item">
+                                                <div className="skill-item-header">
+                                                    <span >
+                                                        <img
+                                                            src={item.icon}
+                                                            alt={item.name}
+                                                            className="badge-icon"
+                                                        />
+                                                        {item.name}
+                                                    </span>
+                                                    <span className="skill-percentage">{item.percentage}%</span>
+                                                </div>
+                                                <div className="skill-bar-track">
+                                                    <div
+                                                        className="skill-bar-fill"
+                                                        style={{ "--target-width": `${item.percentage}%` }}
+                                                    ></div>
+                                                </div>
+                                            </div>
                                         ))}
                                     </div>
                                 </div>
@@ -87,11 +96,11 @@ class Skills extends Component {
     buildOtherSkills() {
         return (
             <div style={{ paddingBottom: "1rem" }}>
-                {this.other_skills.map((item) => (
-                    <span key={item} className="skill-badge">
+                Making scalable apps with {this.other_skills.map((item) => (
+                    <span key={item} className='skill-badge'>
                         {item}
                     </span>
-                ))}
+                ))} in mind.
             </div>
         );
     }
