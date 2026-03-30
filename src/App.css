@@ -275,19 +275,6 @@ body {
   margin-bottom: 1rem;
 }
 
-.skill-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  background: #55555555;
-  color: #aaa;
-  padding: 0.25rem 0.75rem;
-  border-radius: 20px;
-  font-size: 0.875rem;
-  font-weight: 500;
-  margin: 0.25rem;
-}
-
 .badge-icon {
   width: 16px;
   height: 16px;

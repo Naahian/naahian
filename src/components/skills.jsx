@@ -95,9 +95,9 @@ class Skills extends Component {
 
     buildOtherSkills() {
         return (
-            <div style={{ paddingBottom: "1rem" }}>
+            <div style={{ paddingBottom: "2rem", color: "#aaa" }}>
                 Making scalable apps with {this.other_skills.map((item) => (
-                    <span key={item} className='skill-badge'>
+                    <span key={item} style={{ margin: "0.2rem", background: "#00000055", padding: "0.2rem 0.5rem", borderRadius: "1rem" }}>
                         {item}
                     </span>
                 ))} in mind.
