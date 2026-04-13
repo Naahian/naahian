@@ -7,28 +7,28 @@ class Background extends Component {
             {
                 name: 'bi-code-slash',
                 color: '#89ddff',
-                size: '4rem',
+                size: '5rem',
                 position: { top: '15%', left: '25%' },
                 animation: { floatSpeed: '3s' }
             },
             {
                 name: 'bi-phone',
                 color: '#c3e88d',
-                size: '12rem',
+                size: '13rem',
                 position: { top: '50%', left: '5%' },
                 animation: { floatSpeed: '5s' }
             },
             {
                 name: 'bi-cpu',
                 color: '#ff9cac',
-                size: '6rem',
+                size: '7rem',
                 position: { bottom: '10%', left: '50%', transform: 'translateX(-50%)' },
                 animation: { floatSpeed: '3.3s' }
             },
             {
                 name: 'bi-robot',
                 color: '#f78c6c',
-                size: '9rem',
+                size: '10rem',
                 position: { top: '10%', right: '10%' },
                 animation: { floatSpeed: '4s' }
             }
@@ -37,7 +37,7 @@ class Background extends Component {
 
     render() {
         return (
-            <div className="background-icons" style={{
+            <div className="background-icons hero-grid-bg " style={{
                 position: 'fixed',
                 top: 0,
                 left: 0,
@@ -54,8 +54,9 @@ class Background extends Component {
                         style={{
                             position: 'absolute',
                             color: icon.color,
+
                             fontSize: icon.size,
-                            opacity: 0.5,
+                            opacity: 0.3,
                             textShadow: `0px 10px 50px ${icon.color + "99"}`,
                             ...icon.position,
                             animation: [

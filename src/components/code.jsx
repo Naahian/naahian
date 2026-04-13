@@ -7,39 +7,97 @@ class Code extends Component {
         "IoT & Robotics",
         "UI/UX",
         "Web App",
-    ]
+    ];
 
     render() {
         return (
-            <div class="code-container">
+            <div className="code-container">
 
-                <div class="code-header">
-                    <div class="code-dot dot-red"></div>
-                    <div class="code-dot dot-yellow"></div>
-                    <div class="code-dot dot-green"></div>
-                </div>
-                <div id="code-output" className='code-output'>
-                    <span style={{ color: '#64748b' }}># Building innovative solutions</span>{'\n'}
-                    <span style={{ color: '#c792ea' }}>class</span> <span style={{ color: '#82aaff' }}>Developer</span>:{'\n'}
-                    {'    '}<span style={{ color: '#c792ea' }}>def</span> <span style={{ color: '#ffcb6b' }}>__init__</span>(<span style={{ color: '#f07178' }}>self</span>):{'\n'}
-                    {'        '}<span style={{ color: '#f07178' }}>self</span><span style={{ color: '#89ddff' }}>.</span>skills <span style={{ color: '#89ddff' }}>=</span> <span style={{ color: '#eeffff' }}>[
-                        {'\n'}
-                        {this.generateSkills()}
-                        {'        '}]</span>{'\n'}
-                    {'        '}<span style={{ color: '#f07178' }}>self</span><span style={{ color: '#89ddff' }}>.</span>passion <span style={{ color: '#89ddff' }}>=</span> <span style={{ color: '#f78c6c' }}>100</span>
+                {/* ── Top bar ── */}
+                <div className="code-header">
+                    <div className="code-dots">
+                        <div className="code-dot dot-red"></div>
+                        <div className="code-dot dot-yellow"></div>
+                        <div className="code-dot dot-green"></div>
+                    </div>
+                    <span className="code-filename">developer.py</span>
+                    <span className="code-lang">● python</span>
                 </div>
 
-            </div>);
-    }
+                {/* ── Code body ── */}
+                <div className="code-body">
+                    <pre className="code-output">
+                        <span className="comment"># Building innovative solutions{'\n'}</span>
+                        <span className="keyword">class </span>
+                        <span className="class">Developer</span>
+                        <span className="punctuation">:{'\n'}</span>
 
-    generateSkills() {
-        return this.skills.map((item, index) =>
-            <span>
-                {'            '}<span style={{ color: '#c3e88d' }}>"{item}"</span><span style={{ color: '#eeffff' }}>,</span>{'\n'}
-            </span>
+                        {'    '}
+                        <span className="keyword">def </span>
+                        <span className="function">__init__</span>
+                        <span className="punctuation">(</span>
+                        <span className="self">self</span>
+                        <span className="punctuation">):{'\n'}</span>
+
+                        {'        '}
+                        <span className="self">self</span>
+                        <span className="operator">.</span>
+                        <span className="punctuation">name </span>
+                        <span className="operator">= </span>
+                        <span className="string">"Abdullah Al Nahian"</span>
+                        <span className="punctuation">{'\n'}</span>
+
+                        {'        '}
+                        <span className="self">self</span>
+                        <span className="operator">.</span>
+                        <span className="punctuation">role </span>
+                        <span className="operator">= </span>
+                        <span className="string">"CS Undergraduate"</span>
+                        <span className="punctuation">{'\n'}</span>
+
+                        {'        '}
+                        <span className="self">self</span>
+                        <span className="operator">.</span>
+                        <span className="punctuation">skills </span>
+                        <span className="operator">= </span>
+                        <span className="punctuation">[{'\n'}</span>
+
+                        {this._buildSkills()}
+
+                        {'        '}
+                        <span className="punctuation">]{'\n'}</span>
+
+                        {'        '}
+                        <span className="self">self</span>
+                        <span className="operator">.</span>
+                        <span className="punctuation">passion </span>
+                        <span className="operator">= </span>
+                        <span className="number">100</span>
+                        <span className="punctuation">{'\n'}</span>
+
+                        {'        '}
+                        <span className="self">self</span>
+                        <span className="operator">.</span>
+                        <span className="punctuation">open_to_work </span>
+                        <span className="operator">= </span>
+                        <span className="keyword">True</span>
+                        <span className="code-cursor"></span>
+                    </pre>
+                </div>
+
+            </div>
         );
     }
-}
 
+    _buildSkills() {
+        return this.skills.map((item, index) => (
+            <span key={index}>
+                {'            '}
+                <span className="string">"{item}"</span>
+                <span className="punctuation">,{'\n'}</span>
+            </span>
+        ));
+    }
+}
 
 export default Code;

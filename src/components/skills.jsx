@@ -1,46 +1,57 @@
 import React, { Component } from 'react';
+
+
 class Skills extends Component {
 
     skills = [
         {
             category: "Frontend Development",
             icon: "fa-solid fa-layer-group",
-            description: "Creating cross-platform mobile applications with modern frameworks",
             items: [
-                { name: "Flutter", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg", percentage: 90 },
-                { name: "Riverpod", icon: "https://riverpod.dev/img/logo.svg", percentage: 80 },
-                { name: "GetX", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg", percentage: 75 },
-                { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg", percentage: 38 },
-                { name: "Bootstrap5", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg", percentage: 35 },
+                { name: "Flutter", icon: "https://cdn.simpleicons.org/flutter", percentage: 85 },
+                { name: "Provider", icon: "https://cdn.simpleicons.org/dart", percentage: 75 },
+                { name: "Riverpod", icon: "https://riverpod.dev/img/logo.svg", percentage: 65 },
+                { name: "React", icon: "https://cdn.simpleicons.org/react", percentage: 35 },
+                { name: "Bootstrap5", icon: "https://cdn.simpleicons.org/bootstrap", percentage: 35 },
             ],
         },
         {
             category: "Backend Development",
             icon: "fa-solid fa-server",
-            description: "Building scalable server-side applications and APIs",
             items: [
-                { name: "Flask", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg", percentage: 40 },
-                { name: "FastAPI", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg", percentage: 80 },
-                { name: "MySQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg", percentage: 70 },
-                { name: "SQLite", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg", percentage: 40 },
-                { name: "Firebase", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg", percentage: 65 },
-                { name: "Postman", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg", percentage: 70 },
-                { name: "Supabase", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg", percentage: 65 },
-                { name: "Docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg", percentage: 25 },
+                { name: "Flask", icon: "https://cdn.simpleicons.org/flask", percentage: 40 },
+                { name: "FastAPI", icon: "https://cdn.simpleicons.org/fastapi", percentage: 85 },
+                { name: "MySQL", icon: "https://cdn.simpleicons.org/mysql", percentage: 70 },
+                { name: "SQLite", icon: "https://cdn.simpleicons.org/sqlite", percentage: 40 },
+                { name: "Docker", icon: "https://cdn.simpleicons.org/docker", percentage: 30 },
+
             ],
         },
         {
             category: "IoT & Robotics",
             icon: "fa-solid fa-microchip",
-            description: "Developing intelligent systems and embedded solutions",
             items: [
-                { name: "Arduino", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg", percentage: 90 },
-                { name: "ESP", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/espressif.svg", percentage: 85 },
-                { name: "Raspberry Pi", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/raspberrypi/raspberrypi-original.svg", percentage: 70 },
+                { name: "Arduino", icon: "https://cdn.simpleicons.org/arduino", percentage: 90 },
+                { name: "ESP", icon: "https://cdn.simpleicons.org/espressif", percentage: 85 },
+                { name: "Raspberry Pi", icon: "https://cdn.simpleicons.org/raspberrypi", percentage: 70 },
                 { name: "Control System", icon: "https://img.icons8.com/?size=100&id=15163&format=png&color=000000", percentage: 60 },
                 { name: "RTOS", icon: "https://img.icons8.com/?size=100&id=tU0pohYbgHJW&format=png&color=000000", percentage: 30 },
-                { name: "ROS2", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ros/ros-original.svg", percentage: 25 },
+                { name: "ROS2", icon: "https://cdn.simpleicons.org/ros", percentage: 25 },
+                { name: "PyTorch", icon: "https://cdn.simpleicons.org/pytorch", percentage: 25 },
             ],
+        },
+        {
+            category: "Tools & Others",
+            icon: "fa-solid fa-tools",
+            items: [
+                { name: "Firebase", icon: "https://cdn.simpleicons.org/firebase/firebase-plain.svg", percentage: 60 },
+                { name: "Supabase", icon: "https://cdn.simpleicons.org/supabase", percentage: 60 },
+                { name: "Postman", icon: "https://cdn.simpleicons.org/postman", percentage: 70 },
+                { name: "figma", icon: "https://cdn.simpleicons.org/figma", percentage: 50 },
+                { name: "FreeCad", icon: "https://cdn.simpleicons.org/freecad", percentage: 50 },
+
+            ],
+
         },
     ];
 
@@ -53,44 +64,51 @@ class Skills extends Component {
                     <h2 className="section-title">Skills & Expertise</h2>
                     {this.buildOtherSkills()}
                     <div className="row g-4">
-                        {this.skills.map((cat) => (
-                            <div key={cat.category} className="col-lg-4 col-md-6">
-                                <div className="skill-card">
-                                    <div className="skill-icon">
-                                        <i className={cat.icon}></i>
-                                    </div>
-                                    <h4 style={{ color: "var(--text-secondary)" }}>{cat.category}</h4>
-                                    <p className="text-secondary mb-3">{cat.description}</p>
-                                    <div className="skill-items-list">
-                                        {cat.items.map((item) => (
-                                            <div key={item.name} className="skill-item">
-                                                <div className="skill-item-header">
-                                                    <span >
-                                                        <img
-                                                            src={item.icon}
-                                                            alt={item.name}
-                                                            className="badge-icon"
-                                                        />
-                                                        {item.name}
-                                                    </span>
-                                                    <span className="skill-percentage">{item.percentage}%</span>
-                                                </div>
-                                                <div className="skill-bar-track">
-                                                    <div
-                                                        className="skill-bar-fill"
-                                                        style={{ "--target-width": `${item.percentage}%` }}
-                                                    ></div>
-                                                </div>
-                                            </div>
-                                        ))}
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
+                        {this._buildSkillCards()}
                     </div>
                 </div>
             </section>
         );
+    }
+
+    _buildSkillCards() {
+        return this.skills.map((cat) => (
+            <div key={cat.category} className="col-lg-4 col-md-6">
+                <div className="skill-card">
+                    <div className="skill-icon">
+                        <i className={cat.icon}></i>
+                    </div>
+                    <h4 style={{ color: "var(--text-secondary)" }}>{cat.category}</h4>
+                    <div style={{ "height": "2rem" }}></div>
+                    <div className="skill-items-list">
+                        {this._buildSkills(cat)}
+                    </div>
+                </div>
+            </div>
+        ));
+    }
+
+    _buildSkills(cat) {
+        return cat.items.map((item) => (
+            <div key={item.name} className="skill-item">
+                <div className="skill-item-header">
+                    <span>
+                        <img
+                            src={item.icon}
+                            alt={item.name}
+                            className="badge-icon" />
+                        {item.name}
+                    </span>
+                    <span className="skill-percentage">{item.percentage}%</span>
+                </div>
+                <div className="skill-bar-track">
+                    <div
+                        className="skill-bar-fill"
+                        style={{ "--target-width": `${item.percentage}%` }}
+                    ></div>
+                </div>
+            </div>
+        ));
     }
 
     buildOtherSkills() {

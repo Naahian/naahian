@@ -5,6 +5,7 @@ import Skills from './components/skills';
 import Projects from './components/projects';
 import Footer from './components/footer';
 import Background from './components/background';
+import ExperienceSection from './components/experience';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Navbar />
       <Hero />
       <Skills />
+      <ExperienceSection />
       <Projects />
       <Footer />
     </div>
