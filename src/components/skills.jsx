@@ -55,7 +55,7 @@ class Skills extends Component {
         },
     ];
 
-    other_skills = ["Clean Architecture", "MVC", "Feature First"]
+    other_skills = ["MVVM", "Clean Architecture", "MVC"]
 
     render() {
         return (
