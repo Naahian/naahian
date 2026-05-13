@@ -44,11 +44,11 @@ class Skills extends Component {
             category: "Tools & Others",
             icon: "fa-solid fa-tools",
             items: [
-                { name: "Firebase", icon: "https://cdn.simpleicons.org/firebase/firebase-plain.svg", percentage: 60 },
-                { name: "Supabase", icon: "https://cdn.simpleicons.org/supabase", percentage: 60 },
-                { name: "Postman", icon: "https://cdn.simpleicons.org/postman", percentage: 70 },
+                { name: "Firebase", icon: "https://cdn.simpleicons.org/firebase/firebase-plain.svg", percentage: 50 },
+                { name: "Supabase", icon: "https://cdn.simpleicons.org/supabase", percentage: 68 },
+                { name: "Postman", icon: "https://cdn.simpleicons.org/postman", percentage: 50 },
                 { name: "figma", icon: "https://cdn.simpleicons.org/figma", percentage: 50 },
-                { name: "FreeCad", icon: "https://cdn.simpleicons.org/freecad", percentage: 50 },
+                { name: "FreeCad", icon: "https://cdn.simpleicons.org/freecad", percentage: 45 },
 
             ],
 
