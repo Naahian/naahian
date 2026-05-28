@@ -16,7 +16,7 @@ class Projects extends Component {
         },
 
         {
-            title: "Leafify",
+            title: "Clean Commerce",
             image: <img src={leafify} alt="app banner" />,
             description: "All in one AI powered plant companion app with plant guides, shop, garden plant info collection, detection and many more",
             link: "https://github.com/Naahian/Leafify",
@@ -36,13 +36,7 @@ class Projects extends Component {
             link: "https://github.com/Naahian/Shortest-Path-Visualizer",
             tags: ["Algorithms", "Pygame", "Python"]
         },
-        {
-            title: "BuildBuddy",
-            image: <i className="fas fa-robot"></i>,
-            description: "AI-assisted eCommerce platform specifically designed for makers and DIY enthusiasts, featuring personalized recommendations and project planning tools.",
-            link: "https://github.com/Naahian/buildbuddy_frontend",
-            tags: ["Web", "React", "Flask.js"]
-        },
+      
         {
             title: "Hydroponic Automation",
             image: <img src={hydro} alt="ui" />,
