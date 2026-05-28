@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import pathFinder from "../assets/path_finder.png"
 import leafify from "../assets/leafify.png"
+import clean from "../assets/clean.png"
 import lfr from "../assets/lfr.jpg"
 import hydro from "../assets/hydro.png"
 
@@ -20,6 +21,13 @@ class Projects extends Component {
             description: "All in one AI powered plant companion app with plant guides, shop, garden plant info collection, detection and many more",
             link: "https://github.com/Naahian/Leafify",
             tags: ["Flutter", "Riverpod", "Firebase", "FastAPI"]
+        },
+         {
+            title: "Leafify",
+            image: <img src={clean} alt="app banner" />,
+            description: "Clean Commerce is a regular e-commerce application with a special purpose — demonstrating how Clean Architecture combined with MVVM and SOLID principles creates maintainable, testable, and scalable Flutter apps.",
+            link: "https://github.com/Naahian/clean_commerce",
+            tags: ["Flutter", "Riverpod", "Supabase"]
         },
         {
             title: "Path Visualizer",
