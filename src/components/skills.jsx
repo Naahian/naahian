@@ -23,7 +23,7 @@ class Skills extends Component {
                 { name: "FastAPI", icon: "https://cdn.simpleicons.org/fastapi", percentage: 85 },
                 { name: "MySQL", icon: "https://cdn.simpleicons.org/mysql", percentage: 70 },
                 { name: "SQLite", icon: "https://cdn.simpleicons.org/sqlite", percentage: 40 },
-                { name: "Docker", icon: "https://cdn.simpleicons.org/docker", percentage: 30 },
+                { name: "Docker", icon: "https://cdn.simpleicons.org/docker", percentage: 25 },
 
             ],
         },
@@ -33,22 +33,22 @@ class Skills extends Component {
             items: [
                 { name: "Arduino", icon: "https://cdn.simpleicons.org/arduino", percentage: 90 },
                 { name: "ESP", icon: "https://cdn.simpleicons.org/espressif", percentage: 85 },
-                { name: "Raspberry Pi", icon: "https://cdn.simpleicons.org/raspberrypi", percentage: 70 },
-                { name: "Control System", icon: "https://img.icons8.com/?size=100&id=15163&format=png&color=000000", percentage: 60 },
+                { name: "Raspberry Pi", icon: "https://cdn.simpleicons.org/raspberrypi", percentage: 55 },
+                { name: "Control System", icon: "https://img.icons8.com/?size=100&id=15163&format=png&color=000000", percentage: 65 },
                 { name: "RTOS", icon: "https://img.icons8.com/?size=100&id=tU0pohYbgHJW&format=png&color=000000", percentage: 30 },
-                { name: "ROS2", icon: "https://cdn.simpleicons.org/ros", percentage: 25 },
-                { name: "PyTorch", icon: "https://cdn.simpleicons.org/pytorch", percentage: 25 },
+                { name: "ROS2", icon: "https://cdn.simpleicons.org/ros", percentage: 20 },
+                { name: "PyTorch", icon: "https://cdn.simpleicons.org/pytorch", percentage: 15 },
             ],
         },
         {
             category: "Tools & Others",
             icon: "fa-solid fa-tools",
             items: [
-                { name: "Firebase", icon: "https://cdn.simpleicons.org/firebase/firebase-plain.svg", percentage: 50 },
-                { name: "Supabase", icon: "https://cdn.simpleicons.org/supabase", percentage: 68 },
-                { name: "Postman", icon: "https://cdn.simpleicons.org/postman", percentage: 50 },
+                { name: "Firebase", icon: "https://cdn.simpleicons.org/firebase/firebase-plain.svg", percentage: 55 },
+                { name: "Supabase", icon: "https://cdn.simpleicons.org/supabase", percentage: 75 },
+                { name: "Postman", icon: "https://cdn.simpleicons.org/postman", percentage: 60 },
                 { name: "figma", icon: "https://cdn.simpleicons.org/figma", percentage: 50 },
-                { name: "FreeCad", icon: "https://cdn.simpleicons.org/freecad", percentage: 45 },
+                { name: "FreeCad", icon: "https://cdn.simpleicons.org/freecad", percentage: 40 },
 
             ],
 
