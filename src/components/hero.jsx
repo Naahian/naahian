@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Code from './code';
+import myResume from '../assets/resume_v1.1.0.pdf';
 
 class Hero extends Component {
 
@@ -47,7 +48,11 @@ class Hero extends Component {
                                 <a className="btn btn-primary btn-hero px-4" href="#projects">
                                     View My Work
                                 </a>
-                                <a className="btn btn-ghost-hero px-4" href="#contact">
+                                <a
+                                    className="btn btn-ghost-hero px-4"
+                                    href={myResume}
+                                    download="Abdullah_Al_Nahian_CV.pdf"
+                                >
                                     Download CV
                                 </a>
                             </div>
