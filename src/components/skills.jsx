@@ -8,9 +8,9 @@ class Skills extends Component {
             category: "Frontend Development",
             icon: "fa-solid fa-layer-group",
             items: [
-                { name: "Flutter", icon: "https://cdn.simpleicons.org/flutter", percentage: 85 },
+                { name: "Flutter", icon: "https://cdn.simpleicons.org/flutter", percentage: 90 },
                 { name: "Provider", icon: "https://cdn.simpleicons.org/dart", percentage: 75 },
-                { name: "Riverpod", icon: "https://riverpod.dev/img/logo.svg", percentage: 65 },
+                { name: "Riverpod", icon: "https://riverpod.dev/img/logo.svg", percentage: 75 },
                 { name: "React", icon: "https://cdn.simpleicons.org/react", percentage: 35 },
                 { name: "Bootstrap5", icon: "https://cdn.simpleicons.org/bootstrap", percentage: 35 },
             ],
@@ -21,9 +21,9 @@ class Skills extends Component {
             items: [
                 { name: "Flask", icon: "https://cdn.simpleicons.org/flask", percentage: 40 },
                 { name: "FastAPI", icon: "https://cdn.simpleicons.org/fastapi", percentage: 85 },
-                { name: "MySQL", icon: "https://cdn.simpleicons.org/mysql", percentage: 70 },
-                { name: "SQLite", icon: "https://cdn.simpleicons.org/sqlite", percentage: 40 },
-                { name: "Docker", icon: "https://cdn.simpleicons.org/docker", percentage: 25 },
+                { name: "MySQL", icon: "https://cdn.simpleicons.org/mysql", percentage: 65 },
+                { name: "SQLite", icon: "https://cdn.simpleicons.org/sqlite", percentage: 30 },
+                { name: "Docker", icon: "https://cdn.simpleicons.org/docker", percentage: 15 },
 
             ],
         },
@@ -33,10 +33,9 @@ class Skills extends Component {
             items: [
                 { name: "Arduino", icon: "https://cdn.simpleicons.org/arduino", percentage: 90 },
                 { name: "ESP", icon: "https://cdn.simpleicons.org/espressif", percentage: 85 },
-                { name: "Raspberry Pi", icon: "https://cdn.simpleicons.org/raspberrypi", percentage: 55 },
+                { name: "Raspberry Pi", icon: "https://cdn.simpleicons.org/raspberrypi", percentage: 45 },
                 { name: "Control System", icon: "https://img.icons8.com/?size=100&id=15163&format=png&color=000000", percentage: 65 },
                 { name: "RTOS", icon: "https://img.icons8.com/?size=100&id=tU0pohYbgHJW&format=png&color=000000", percentage: 30 },
-                { name: "ROS2", icon: "https://cdn.simpleicons.org/ros", percentage: 20 },
                 { name: "PyTorch", icon: "https://cdn.simpleicons.org/pytorch", percentage: 15 },
             ],
         },
