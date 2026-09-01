@@ -4,30 +4,31 @@ import leafify from "../assets/leafify.png"
 import clean from "../assets/clean.png"
 import lfr from "../assets/lfr.jpg"
 import hydro from "../assets/hydro.png"
+import cashflow from "../assets/cashflow.png"
 
 class Projects extends Component {
     projects = [
-        {
-            title: "Reborn",
-            image: <img src="https://img.itch.zone/aW1nLzI0NTk3ODc1LnBuZw==/original/cvDa9n.png" alt="game logo" />,
-            description: "A Hobby Project. 2D RPG platformer game created using godot game engine. A king was revived, now he has to reclaim his kingdom.",
-            link: "https://naahian.itch.io/reborn",
-            tags: ["Godot", "Game Dev", "RPG", "Platformer"]
+     
+{
+            title: "CashFlow",
+            image: <img src={cashflow} alt="app banner" />,
+            description: "A local first finance tracker app with smart analytics, recurring transaction, budget allocation and muchmore. All userdata are encrypted and never leaves app.",
+            link: "https://github.com/Naahian/CashFlow",
+            tags: ["Flutter", "Riverpod", "Hive", "RevenueCat"]
         },
-
         {
             title: "Leafify",
             image: <img src={leafify} alt="app banner" />,
             description: "All in one AI powered plant companion app with plant guides, shop, garden plant info collection, detection and many more",
             link: "https://github.com/Naahian/Leafify",
-            tags: ["Flutter", "Riverpod", "Firebase", "FastAPI"]
+            tags: ["Flutter", "Riverpod", "Firebase", "FastAPI","SSLCommerz"]
         },
          {
             title: "Clean Commerce",
             image: <img src={clean} alt="app banner" />,
             description: "Clean Commerce is a regular e-commerce application with a special purpose — demonstrating how Clean Architecture combined with MVVM and SOLID principles creates maintainable, testable, and scalable Flutter apps.",
             link: "https://github.com/Naahian/clean_commerce",
-            tags: ["Flutter", "Riverpod", "Supabase"]
+            tags: ["Flutter", "Riverpod", "Supabase","GooglePay"]
         },
         {
             title: "Path Visualizer",
@@ -36,13 +37,20 @@ class Projects extends Component {
             link: "https://github.com/Naahian/Shortest-Path-Visualizer",
             tags: ["Algorithms", "Pygame", "Python"]
         },
+           {
+            title: "Reborn",
+            image: <img src="https://img.itch.zone/aW1nLzI0NTk3ODc1LnBuZw==/original/cvDa9n.png" alt="game logo" />,
+            description: "A Hobby Project. 2D RPG platformer game created using godot game engine. A king was revived, now he has to reclaim his kingdom.",
+            link: "https://naahian.itch.io/reborn",
+            tags: ["Godot", "Game Dev", "RPG", "Platformer"]
+        },
       
         {
             title: "Hydroponic Automation",
             image: <img src={hydro} alt="ui" />,
             description: "IoT-based automated hydroponic system with real-time monitoring and control of nutrients, pH levels, and lighting conditions.",
             link: "https://github.com/Naahian/hydro_project",
-            tags: ["IoT", "Arduino", "Automation"]
+            tags: ["IoT", "Arduino", "Control Systems"]
         },
 
         {
