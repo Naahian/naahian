@@ -3,6 +3,7 @@ import cashflowImage from "./assets/cashflow.png";
 import cleanImage from "./assets/clean.png";
 import pathFinderImage from "./assets/path_finder.png";
 import hydroImage from "./assets/hydro.png";
+import resume from "./assets/resume_v1.1.0.pdf";
 
 export const portfolioData = {
   site: {
@@ -12,7 +13,7 @@ export const portfolioData = {
     location: "Dhaka, Bangladesh",
     role: "Computer science undergraduate working across mobile apps, IoT, and robotics.",
     bio: "I like taking a system apart to see how it actually works, then rebuilding it cleaner — whether that's a Flutter app's architecture or a hydroponic rig's control loop. Most of what I ship sits at the point where software meets hardware.",
-    resumeUrl: "./assets/resume_v1.1.0.pdf",
+    resumeUrl: resume,
     email: "nahianbusi@gmail.com",
     github: "https://github.com/naahian",
     linkedin: "https://www.linkedin.com/in/abdullah-al-nahian-3286841b1/",
