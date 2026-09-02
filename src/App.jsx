@@ -50,7 +50,7 @@ function Hero() {
         <h1 className="load-in d2">{data.site.title}</h1>
         <p className="role-line load-in d3">{data.site.role}</p>
         <p className="bio load-in d3">{data.site.bio}</p>
-        <div className="cta-row load-in d4"><a href="#work" className="btn btn-primary">See the work</a><a href={data.site.resumeUrl} className="btn btn-ghost">Download résumé</a></div>
+        <div className="cta-row load-in d4"><a href="#work" className="btn btn-primary">See the work</a><a href={data.site.resumeUrl} download={"Abdullah_Al_Nahian.pdf"} className="btn btn-ghost">Download résumé</a></div>
       </div>
       <div className="bento-cluster load-in d4">
         <div className="bento-tile spec-panel bracketed">

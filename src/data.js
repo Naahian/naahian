@@ -16,7 +16,7 @@ export const portfolioData = {
     email: "nahianbusi@gmail.com",
     github: "https://github.com/naahian",
     linkedin: "https://www.linkedin.com/in/abdullah-al-nahian-3286841b1/",
-    version: "v2.0.0",
+    version: "v2.0.1",
     copyright: "© 2026 Abdullah Al Nahian"
   },
   profile: [
