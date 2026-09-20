@@ -3,6 +3,7 @@ import cashflowImage from "./assets/cashflow.png";
 import cleanImage from "./assets/clean.png";
 import pathFinderImage from "./assets/path_finder.png";
 import hydroImage from "./assets/hydro.png";
+import resume from "./assets/resume_v1.1.0.pdf";
 
 export const portfolioData = {
   site: {
@@ -16,11 +17,7 @@ export const portfolioData = {
     email: "nahianbusi@gmail.com",
     github: "https://github.com/naahian",
     linkedin: "https://www.linkedin.com/in/abdullah-al-nahian-3286841b1/",
-<<<<<<< HEAD
-    version: "v2.0.0",
-=======
     version: "v2.0.2",
->>>>>>> 3b10aad (updated skills and porject links)
     copyright: "© 2026 Abdullah Al Nahian"
   },
   profile: [
@@ -52,42 +49,42 @@ export const portfolioData = {
   ],
   projects: [
     {
-      id: "P.01", className: "proj-tall",
+      id: "01", className: "proj-tall",
       image: leafifyImage,  // Use the imported variable
       alt: "Leafify app screens", title: "Leafify",
       description: "An AI-powered plant companion app — care guides, a shop, garden collection tracking, and disease detection from a photo.",
       tags: ["Flutter", "Riverpod", "Firebase", "FastAPI", "SSLCommerz"], url: "https://github.com/Naahian/Leafify"
     },
     {
-      id: "P.05", className: "proj-tall",
+      id: "02", className: "proj-tall",
       image: cashflowImage,
       alt: "CashFlow app screens", title: "CashFlow",
       description: "A local first finance tracker app with smart analytics, recurring transaction, budget allocation and muchmore. All userdata are encrypted and never leaves app.",
       tags: ["Flutter", "Riverpod", "Hive", "RevenueCat"], url: "https://github.com/Naahian/CashFlow"
     },
     {
-      id: "P.05", className: "proj-tall",
+      id: "03", className: "proj-tall",
       image: cleanImage,
       alt: "Clean Commerce app screens", title: "Clean Commerce",
       description: "A regular e-commerce app with an atypical goal: proving out Clean Architecture, MVVM, and SOLID in a real Flutter codebase.",
       tags: ["Flutter", "Riverpod", "Supabase"], url: "https://github.com/Naahian/clean_commerce"
     },
     {
-      id: "P.04", className: "proj-tall",
+      id: "04", className: "proj-tall",
       image: pathFinderImage,
       alt: "Path visualizer grid", title: "Path Visualizer",
       description: "An interactive tool for shortest-path algorithms — Dijkstra, A*, custom grids, and real-time animation.",
       tags: ["Algorithms", "Pygame", "Python"], url: "https://github.com/Naahian/Shortest-Path-Visualizer"
     },
     {
-      id: "P.03", className: "proj-tall",
+      id: "05", className: "proj-tall",
       image: hydroImage,
       alt: "Circuit board detail", title: "Hydroponic Automation",
       description: "An IoT hydroponic system that monitors and controls nutrient dosing, pH, and lighting in real time.",
       tags: ["IoT", "Arduino", "Automation"], url: "https://github.com/Naahian/hydro_project"
     },
     {
-      id: "P.06", className: "proj-tall",
+      id: "06", className: "proj-tall",
       image: "https://img.itch.zone/aW1nLzI0NTk3ODc1LnBuZw==/original/cvDa9n.png",  // Or import when you have the image
       alt: "Pixel art game character", title: "Reborn",
       description: "A hobby 2D RPG platformer built in Godot. A king is revived and has to reclaim his kingdom, one level at a time.",
