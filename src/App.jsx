@@ -64,7 +64,7 @@ function Hero() {
 
 function Skills() {
   return <section id="skills">
-    <div className="wrap"><div className="section-head"><h2>Skills</h2><div className="section-note">Grouped by how often I reach for them, not a made-up percentage.</div></div>
+    <div className="wrap"><div className="section-head"><h2>Skills</h2><div className="section-note">Grouped by how often I reach for them and confidence</div></div>
       <div className="skills-bento">{data.skills.map(tier => <Tilt key={tier.name} className={`skill-tier ${tier.tier}`}>
         <div className="tier-head"><span className="tier-name">{tier.name}</span><span className="tier-desc">{tier.description}</span></div>
         <div className="chip-row">{tier.skills.map(skill => <span className="chip" key={skill}>{skill}</span>)}</div>
@@ -85,7 +85,7 @@ function Project({ project }) {
 }
 
 function Work() {
-  return <section id="work"><div className="wrap"><div className="section-head"><h2>Selected work</h2><div className="section-note">Six projects spanning mobile apps, embedded systems, and algorithm tooling.</div></div></div>
+  return <section id="work"><div className="wrap"><div className="section-head"><h2>Selected work</h2><div className="section-note">top projects spanning mobile apps, embedded systems and others.</div></div></div>
     <div className="projects-grid">{data.projects.map(project => <Project key={project.id} project={project} />)}</div>
   </section>;
 }
