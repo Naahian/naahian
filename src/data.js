@@ -17,7 +17,7 @@ export const portfolioData = {
     email: "nahianbusi@gmail.com",
     github: "https://github.com/naahian",
     linkedin: "https://www.linkedin.com/in/abdullah-al-nahian-3286841b1/",
-    version: "v2.0.2",
+    version: "v2.1.2",
     copyright: "© 2026 Abdullah Al Nahian"
   },
   profile: [
@@ -32,19 +32,19 @@ export const portfolioData = {
       tier: "tier-1",
       name: "Core toolkit ",
       description: "— reaches for daily",
-      skills: ["Flutter", "Provider", "Riverpod", "Supabase", "FastAPI", "MySQL", "Firebase", "CI/CD(Github Action)", "Arduino", "ESP32"]
+      skills: ["Flutter", "Provider", "Riverpod", "Supabase", "FastAPI", "Firebase", "CI/CD(Github Action)", "Arduino", "ESP32"]
     },
     {
       tier: "tier-2",
       name: "Comfortable with",
       description: "— solid working knowledge",
-      skills: ["React", "Flask", "SQLite", "Raspberry Pi", "Control Systems", "Postman", "Figma", "Bootstrap5"]
+      skills: ["React", "Flask", "SQLite", "Raspberry Pi", "Control Systems", "Postman", "Figma", "Bootstrap5", "PostgreSQL"]
     },
     {
       tier: "tier-3",
       name: "Others",
       description: "— learning in progress",
-      skills: ["RTOS", "ROS2", "PyTorch", "Docker", "Fusion360"]
+      skills: ["RTOS", "ROS2", "PyTorch", "Docker", "Fusion360", "LangChain", "ChromaDB"]
     }
   ],
   projects: [
@@ -96,20 +96,21 @@ export const portfolioData = {
       role: "Senior Executive", organization: "Robotics Club of Brac University",
       type: "Full-time", period: "Jan 2022 – Jan 2025",
       description: [
-        "Built and led the Smart Hydroponic Farming IoT project",
+        "Led development of Smart Hydroponic Farming, an IoT system using ESP32 and environmental sensors to automate irrigation and monitoring.",
         "Built a line-following robot for competition entries",
         "Ran robotics workshops and mentored newcomers",
-        "Helped plan and prepare workshop curriculum"
+        "Helped planning and preparing workshop contents"
       ],
-      tags: ["Arduino", "ESP", "Control Systems", "IoT", "Robotics"]
+      tags: ["Arduino", "ESP32", "Control Systems", "IoT", "Robotics"]
     },
     {
       role: "Flutter Developer Intern", organization: "Sugary LLC",
       type: "Part-time", period: "Feb 2023 – May 2023",
       description: [
-        "Learned and applied Clean Architecture in production code",
-        "Helped build an internal admin panel app",
-        "Integrated and consumed REST APIs"
+        "Learned and applied Clean Architecture",
+        "Helped in making Admin Panel App, created screens and controllers with GetX.",
+        "integrated RestAPI from a custom backend using dio.",
+        "Learned and used Postman for API testing. "
       ],
       tags: ["Flutter", "Clean Architecture", "GetX", "Figma"]
     }
