@@ -3,7 +3,7 @@ import cashflowImage from "./assets/cashflow.png";
 import cleanImage from "./assets/clean.png";
 import pathFinderImage from "./assets/path_finder.png";
 import hydroImage from "./assets/hydro.png";
-import resume from "./assets/resume_v1.1.0.pdf";
+import resume from "./assets/resume_v1.2.1.pdf";
 
 export const portfolioData = {
   site: {
@@ -11,19 +11,19 @@ export const portfolioData = {
     brand: "A.A. NAHIAN",
     title: "Abdullah Al Nahian",
     location: "Dhaka, Bangladesh",
-    role: "Computer science undergraduate working across mobile apps, IoT, and robotics.",
-    bio: "I like taking a system apart to see how it actually works, then rebuilding it cleaner — whether that's a Flutter app's architecture or a hydroponic rig's control loop. Most of what I ship sits at the point where software meets hardware.",
-    resumeUrl: "./assets/resume_v1.1.0.pdf",
+    role: "Mobile apps, IoT and embedded systems",
+    bio: "I take systems apart to see how they work, then rebuild them cleaner, from Flutter app architecture to hydroponic control loops. I work where software meets hardware. I use AI agent's custom skills to automate the repetitive parts so I can focus on the problem.",
+    resumeUrl: resume,
     email: "nahianbusi@gmail.com",
     github: "https://github.com/naahian",
     linkedin: "https://www.linkedin.com/in/abdullah-al-nahian-3286841b1/",
-    version: "v2.1.2",
+    version: "v2.1.3",
     copyright: "© 2026 Abdullah Al Nahian"
   },
   profile: [
     ["Coding since", "2016"],
-    ["Projects shipped", "6+"],
-    ["Primary stack", "Flutter · Supabase", "copper"],
+    ["Projects made", "6+"],
+    ["Primary stack", "Flutter · Firebase · FastAPI", "copper"],
     ["Also builds with", "Arduino · ESP32"],
     ["Architecture", "Clean / MVVM"]
   ],
