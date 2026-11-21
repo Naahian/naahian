@@ -4,7 +4,7 @@ import cleanImage from "./assets/clean.png";
 import pathFinderImage from "./assets/path_finder.png";
 import hydroImage from "./assets/hydro.png";
 import carematchImage from "./assets/carematch.png";
-import resume from "./assets/resume_v1.2.1.pdf";
+import resume from "./assets/resume_v1.3.1.pdf";
 
 export const portfolioData = {
   site: {
@@ -13,12 +13,12 @@ export const portfolioData = {
     title: "Abdullah Al Nahian",
     location: "Dhaka, Bangladesh",
     role: "Mobile apps, IoT and embedded systems",
-    bio: "I take systems apart to see how they work, then rebuild them cleaner, from Flutter app architecture to hydroponic control loops. I work where software meets hardware. I use AI agent's custom skills to automate the repetitive parts so I can focus on the problem.",
+    bio: "I take systems apart to see how they work, then rebuild them cleaner, from Flutter app architecture to hydroponic control loops. I love to work where software meets hardware.",
     resumeUrl: resume,
     email: "nahianbusi@gmail.com",
     github: "https://github.com/naahian",
     linkedin: "https://www.linkedin.com/in/abdullah-al-nahian-3286841b1/",
-    version: "v2.1.3",
+    version: "v2.2.3",
     copyright: "© 2026 Abdullah Al Nahian"
   },
   profile: [
@@ -33,19 +33,19 @@ export const portfolioData = {
       tier: "tier-1",
       name: "Core toolkit ",
       description: "— reaches for daily",
-      skills: ["Flutter", "Provider", "Riverpod", "Supabase", "FastAPI", "Firebase", "CI/CD(Github Action)", "Arduino", "ESP32"]
+      skills: ["Flutter", "Provider", "Riverpod", "Supabase", "FastAPI", "Firebase", "React", "CI/CD(Github Action)", "Postman", "Figma", "Arduino", "ESP32"]
     },
     {
       tier: "tier-2",
       name: "Comfortable with",
       description: "— solid working knowledge",
-      skills: ["React", "Flask", "SQLite", "Raspberry Pi", "Control Systems", "Postman", "Figma", "Bootstrap5", "PostgreSQL"]
+      skills: ["Flask", "SQLite", "Raspberry Pi", "Control Systems", "Bootstrap5", "PostgreSQL", "Docker"]
     },
     {
       tier: "tier-3",
       name: "Others",
       description: "— learning in progress",
-      skills: ["RTOS", "ROS2", "PyTorch", "Docker", "Fusion360", "LangChain", "ChromaDB"]
+      skills: ["RTOS", "ROS2", "PyTorch", "Fusion360", "LangChain", "ChromaDB"]
     }
   ],
   projects: [
